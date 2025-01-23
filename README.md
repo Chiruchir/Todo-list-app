@@ -1,76 +1,101 @@
-Todo List Full Stack Application
-Overview
-Comprehensive full-stack todo management application with React frontend and Node.js/Express backend.
-Features
-
-Create, update, and delete todos
-Priority-based task management
-Todo filtering
-Responsive design
-
-Tech Stack
+Todo List Application
+Project Overview
+Full-stack todo management application with advanced features and modern web technologies.
+Technologies
 
 Frontend: React
 Backend: Node.js, Express
 Database: MongoDB
-State Management: React Hooks
-API Handling: Axios
+API: RESTful design
+
+Project Structure
+Copytodo-list-app/
+│
+├── frontend/                 
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── TodoList.js
+│   │   │   ├── TodoItem.js
+│   │   │   ├── AddTodo.js
+│   │   ├── services/
+│   │   │   └── api.js
+│   │   ├── App.js
+│   │   └── index.js
+│   ├── package.json
+│   └── README.md
+│
+├── backend/                  
+│   ├── models/
+│   │   └── Todo.js
+│   ├── routes/
+│   │   └── todoRoutes.js
+│   ├── controllers/
+│   │   └── todoController.js
+│   ├── config/
+│   │   └── db.js
+│   ├── server.js
+│   └── package.json
+│
+└── README.md
+Features
+
+CRUD Todo Operations
+Priority Management
+Task Filtering
+Responsive Design
 
 Prerequisites
 
 Node.js (v14+)
-MongoDB account
-Git
+MongoDB
+npm/yarn
 
 Setup Instructions
 Backend Setup
 
-Navigate to backend directory
-Install dependencies
+Install Dependencies
 
-bashCopynpm install
+bashCopycd backend
+npm install
 
-Create .env file
+Create .env File
 
 CopyPORT=5000
 MONGO_URI=your_mongodb_connection_string
 Frontend Setup
 
-Navigate to frontend directory
-Install dependencies
+Install Dependencies
 
-bashCopynpm install
+bashCopycd frontend
+npm install
 Running Application
 
-Start backend server
+Start Backend
 
 bashCopycd backend
-npm start
+npm run dev
 
-Start frontend application
+Start Frontend
 
 bashCopycd frontend
 npm start
-Project Structure
-Copytodo-list-app/
-├── frontend/         # React application
-└── backend/          # Express server
-Environment Variables
-
-PORT: Backend server port
-MONGO_URI: MongoDB connection string
-
 API Endpoints
 
-GET /api/todos: Retrieve todos
-POST /api/todos: Create new todo
+GET /api/todos: List todos
+POST /api/todos: Create todo
 PUT /api/todos/:id: Update todo
 DELETE /api/todos/:id: Delete todo
 
-Contribution
+Environment Configuration
 
-Fork repository
-Create feature branch
-Commit changes
-Push to branch
-Create pull request
+PORT: Server port
+MONGO_URI: Database connection
+
+Contributing
+
+Fork Repository
+Create Feature Branch
+Commit Changes
+Push Branch
+Create Pull Request
